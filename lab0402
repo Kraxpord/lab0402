@@ -1,0 +1,111 @@
+#include <iostream> 
+#include <chrono> 
+#include <thread> 
+#include <time.h> 
+#include <Windows.h> 
+using namespace std;
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int columes, row, x, y;
+	int operation;
+	cout << "1-ex" << endl;
+	cout << "2-ex" << endl;
+	cout << "3-ex" << endl;
+	cout << "Enter operation ->>";
+	cin >> operation;
+	switch (operation)
+	{
+	case 1:
+	{int main();
+	{
+		srand(time(0));
+		const int x = 4;
+		const int y = 4;
+		int arr2d[x][y];
+		for (size_t i = 0; i < x; i++)
+		{
+			for (size_t j = 0; j < y; j++)
+			{
+				arr2d[i][j] = rand() % 10;
+				cout << arr2d[i][j] << ' ';
+			}
+			cout << endl;
+		}
+		cout << "----------------" << endl;
+		int row_sum = 0, sum = 0;
+		for (size_t i = 0; i < x; ++i)
+		{
+
+			for (size_t j = 0; j < y; ++j)
+			{
+				row_sum += arr2d[i][j];
+				sum += arr2d[i][j];
+				cout << arr2d[i][j] << "  ";
+
+			}
+			cout << "| ";
+			cout << row_sum << endl;
+			row_sum = 0;
+		}
+
+		cout << "----------------" << endl;
+
+		int i, j, col_sum = 0;
+		for (size_t i = 0; i < x; ++i)
+		{
+			for (size_t j = 0; j < y; ++j)
+			{
+				col_sum += arr2d[j][i];
+			}
+
+			cout << col_sum << " ";
+			col_sum = 0;
+		}
+		cout << " |" << sum;
+		return 0;
+	}
+	}break;
+	case 2:
+	{class ArrayData {
+	private:
+		int array[10][10];
+		int sum;
+		double average;
+		int min;
+		int max;
+
+	public:
+		ArrayData(); 
+		void calculate();
+		void updateArray(int i, int j, int value); 
+	};
+	}break;
+	case 3:
+	{int main(); {
+		srand(time(0));
+		int firstArray[5][10];
+		int secondArray[5][5];
+
+
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 10; j++) {
+				firstArray[i][j] = rand() % 51;
+			}
+		}
+
+
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				secondArray[i][j] = firstArray[i][j * 2] + firstArray[i][j * 2 + 1];
+			}
+		}
+	}break;
+
+	default:
+		break;
+	}
+
+	return 0;
+}
